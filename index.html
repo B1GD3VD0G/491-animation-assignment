@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Good, The Bad, and Chad!</title>
+        <link rel="shortcut icon" href="#" />
+        <!-- Scripts containing info/functions for classes. -->
+        <script type="text/javascript" src="./js/scripts/util.js"></script>
+        <!-- Put non-entity classes here! -->
+        <script type="text/javascript" src="./js/classes/animator.js"></script>
+        <script type="text/javascript" src="./js/classes/asset_manager.js"></script>
+        <script type="text/javascript" src="./js/classes/game_engine.js"></script>
+        <script type="text/javascript" src="./js/classes/timer.js"></script>
+        <!-- Entities: -->
+        <script type="text/javascript" src="./js/classes/entities/slime.js"></script>
+        <script type="text/javascript" src="./js/classes/entities/bunny.js"></script>
+        <script type="text/javascript" src="./js/classes/entities/snake.js"></script>
+        <script type="text/javascript" src="./js/classes/entities/papa_chad.js"></script>
+        <script type="text/javascript" src="./js/classes/entities/title.js"></script>
+        <!-- CSS: -->
+        <link rel="stylesheet" href="./css/general.css" />
+    </head>
+
+    <body>
+        <!-- 
+            NOTE: 
+            the width and height of this is unique.
+            It refers not to the size on the window, but the amount of visible (GAME) pixels visible on the screen.
+            For in game reference, these are identified as CAMERA.WIDTH and CAMERA.HEIGHT.
+            Actual pixel height of the canvas is set in CSS.
+            If you change it here, change it in camera.js as well.
+        -->
+        <canvas height="1080" width="1920" id="game-world" tabindex="0" autofocus></canvas>
+        <!-- Load the main script. -->
+        <script type="text/javascript" src="./js/scripts/main.js"></script>
+    </body>
+</html>
